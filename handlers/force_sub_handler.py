@@ -20,7 +20,7 @@ async def handle_force_sub(bot, cmd):
     except UserNotParticipant:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Silahkan join dulu ke chaneel!**\n\nAnda tidak dapat akses sebelum join!",
+            text="**Silahkan join dulu ke chaneel!**\n\nAnda tidak dapat membuka file atau video sebelum join!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -37,7 +37,7 @@ async def handle_force_sub(bot, cmd):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/arifrozex21).",
+            text="Something went Wrong. Contact my [Support Group](https://t.me/melna21).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
