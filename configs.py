@@ -26,8 +26,8 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 📡 **Hosted on:** [Heroku](https://heroku.com)
 🧑🏻‍💻 **Developer:** @melna21
-👥 **Chanel Utama:** [Linux Repositories](https://t.me/freesini)
-📢 **Komik dewasa Channel:** [Discovery Projects](https://t.me/komikdewasa18)
+👥 **Chanel Utama:** [chanel utama](https://t.me/freesini)
+📢 **Komik dewasa Channel:** [Chanl Komik](https://t.me/komikdewasa18)
 """
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @melna21
