@@ -51,8 +51,8 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/freesini"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/freesini")
+                        InlineKeyboardButton("Channel Utama", url="https://t.me/freesini"),
+                        InlineKeyboardButton("Channel Komik", url="https://t.me/komikdewasa18")
                     ],
                     [
                         InlineKeyboardButton("Tentang Bot", callback_data="aboutbot")
@@ -98,7 +98,7 @@ async def main(bot: Client, message: Message):
                 pass
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/arifrozex21)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/melna21)",
                                      disable_web_page_preview=True)
             return
 
@@ -118,8 +118,8 @@ async def main(bot: Client, message: Message):
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Buka Link", url=share_link)],
-                     [InlineKeyboardButton("Updates Channel", url="https://t.me/freesini"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/freesini")]]
+                     [InlineKeyboardButton("Chanel Utama", url="https://t.me/freesini"),
+                      InlineKeyboardButton("Channel Komik", url="https://t.me/komikdewasa18")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -315,8 +315,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                                              url="http://t.me/freesini")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("kembali keutama", callback_data="gotohome"),
+                        InlineKeyboardButton("tentang saya", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -334,8 +334,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                                              url="https://github.com/arifrozex")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("tentang bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("kembali keutama", callback_data="gotohome")
                     ]
                 ]
             )
@@ -349,12 +349,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/freesini"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/freesini")
+                        InlineKeyboardButton("Channel Utama", url="https://t.me/freesini"),
+                        InlineKeyboardButton("Channel komik", url="https://t.me/komikdewasa18")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("Tentang bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("tentang saya", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -374,7 +374,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                     return
             except UserNotParticipant:
                 await cmd.message.edit(
-                    text="**Silahkan join dulu ke chaneel!**\n\nAnda tidak dapat akses sebelum join!",
+                    text="**Silahkan join dulu ke chaneel!**\n\nAnda tidak dapat membuka file atau video sebelum join!",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -406,8 +406,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Komik Dewasa ", url="https://t.me/Komikdewasa18")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("tentang bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("tentang saya", callback_data="aboutdevs")
                     ]
                 ]
             )
