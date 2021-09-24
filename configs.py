@@ -33,6 +33,6 @@ jika ada kekurangan dalam bot ini anda bisa langsung hubungi admin klik saja lap
 [lapor](https://t.me/melna21) (lapor)
 """
 	HOME_TEXT = """
-Hi, [{}](tg://user?id={})\n\nThis is Permanent **link tempat file**.
+Hi, [{}](tg://user?id={})\n\nBot ini anda bisa gunakan untuk file atau video menjadi link.
 silakan kirim file dan video anda di bot ini, jangan kirim foto ya. terimaksih telah mendukung! cek **tentang bot** di bawah ini.
 """
